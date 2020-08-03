@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'api',
     'api.category',
     'api.product',
+    'api.user',
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+AUTH_USER_MODEL = 'user.User'
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,

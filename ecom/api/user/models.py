@@ -10,7 +10,6 @@ class User(AbstractUser):
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
-
     phone = models.IntegerField(blank = True, null = True)
     gender = models.CharField(max_length = 10 ,blank = True, null = True)
 

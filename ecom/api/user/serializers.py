@@ -3,7 +3,7 @@ from django.contrib.auth.hashers import make_password
 from .models import User
 from rest_framework.decorators import authentication_classes,permission_classes
 
-class UserSerializer(serializers.HyperlinkdedModelSerializer):
+class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     def create(self,validated_data):
         password = validated_data.pop('password', None)
