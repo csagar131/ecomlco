@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'api.product',
     'api.user',
     'api.order',
+    'api.payment',
 ]
 
 MIDDLEWARE = [
@@ -108,6 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
 
 
 # Internationalization
